@@ -1,0 +1,48 @@
+schema: '2.0'
+stages:
+  data_collection:
+    cmd: python src/data/make_dataset.py
+    deps:
+    - path: src/data/make_dataset.py
+      hash: md5
+      md5: bda3be4ddf88949c545539589f05a865
+      size: 3404
+    outs:
+    - path: data/processed
+      hash: md5
+      md5: 74186ec79b8905878ee7722934c59027.dir
+      size: 41103296
+      nfiles: 6
+  model_building:
+    cmd: python src/model/train_model.py
+    deps:
+    - path: data/processed
+      hash: md5
+      md5: 74186ec79b8905878ee7722934c59027.dir
+      size: 41103296
+      nfiles: 6
+    - path: src/model/train_model.py
+      hash: md5
+      md5: 8dd1e77d28fcf280c1f51e6249acfa8b
+      size: 1550
+    outs:
+    - path: logistic_regression_model.pkl
+      hash: md5
+      md5: 18fc026e021f3048dae715869a738d3e
+      size: 40728
+  model_eval:
+    cmd: python src/model/model_eval.py
+    deps:
+    - path: logistic_regression_model.pkl
+      hash: md5
+      md5: 18fc026e021f3048dae715869a738d3e
+      size: 40728
+    - path: src/model/model_eval.py
+      hash: md5
+      md5: eb75e1ecbf14294194b24dd26c79f357
+      size: 1681
+    outs:
+    - path: metrics.json
+      hash: md5
+      md5: d2c51db8445e8d04080a3da2e4bb92a2
+      size: 919

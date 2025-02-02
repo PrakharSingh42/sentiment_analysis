@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/rajpu/OneDrive/Desktop/python_project/project_ds/mlops/mlruns/0/bdd8eef02b6444f2a4fecb5ad2992e46/artifacts
+end_time: 1738394797156
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: bdd8eef02b6444f2a4fecb5ad2992e46
+run_name: LogisticRegression
+run_uuid: bdd8eef02b6444f2a4fecb5ad2992e46
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738394787250
+status: 3
+tags: []
+user_id: rajpu

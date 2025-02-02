@@ -9,6 +9,13 @@ stages:
     cmd: python src/model/train_model.py
     deps:
     - data/processed
-    - src/models/train_model.py
+    - src/model/train_model.py
     outs:
     - logistic_regression_model.pkl
+  model_eval:
+    cmd: python src/model/model_eval.py
+    deps:
+    - logistic_regression_model.pkl
+    - src/model/model_eval.py
+    metrics:
+    - metrics.json

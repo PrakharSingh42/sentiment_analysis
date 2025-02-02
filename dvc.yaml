@@ -1,0 +1,14 @@
+stages:
+  data_collection:
+    cmd: python src/data/make_dataset.py
+    deps:
+    - src/data/make_dataset.py
+    outs:
+    - data/processed
+  model_building:
+    cmd: python src/model/train_model.py
+    deps:
+    - data/processed
+    - src/models/train_model.py
+    outs:
+    - logistic_regression_model.pkl

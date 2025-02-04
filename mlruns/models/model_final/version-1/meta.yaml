@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1738693706199
+current_stage: None
+description: ''
+last_updated_timestamp: 1738693706199
+name: model_final
+run_id: 8e45c53d71a94a858e51b90f73b134d2
+run_link: ''
+source: file:///C:/Users/rajpu/OneDrive/Desktop/python_project/project_ds/mlops/mlruns/0/8e45c53d71a94a858e51b90f73b134d2/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///C:/Users/rajpu/OneDrive/Desktop/python_project/project_ds/mlops/mlruns/0/8e45c53d71a94a858e51b90f73b134d2/artifacts/model
+user_id: null
+version: 1

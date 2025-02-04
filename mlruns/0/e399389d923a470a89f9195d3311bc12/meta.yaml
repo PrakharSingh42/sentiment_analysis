@@ -1,8 +1,9 @@
 artifact_uri: file:///C:/Users/rajpu/OneDrive/Desktop/python_project/project_ds/mlops/mlruns/0/e399389d923a470a89f9195d3311bc12/artifacts
+deleted_time: 1738487419791
 end_time: 1738396411946
 entry_point_name: ''
 experiment_id: '0'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: e399389d923a470a89f9195d3311bc12
 run_name: LogisticRegression
 run_uuid: e399389d923a470a89f9195d3311bc12
